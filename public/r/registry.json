@@ -1,0 +1,169 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "acme",
+  "homepage": "https://acme.com",
+  "items": [
+    {
+      "name": "datagrid",
+      "type": "registry:component",
+      "title": "DataGrid",
+      "description": "The core datagrid component",
+      "registryDependencies": ["button","dropdown-menu", "table", "checkbox"],
+      "dependencies": ["@strucura/datagrids-headless-react", "lucide-react"],
+      "files": [
+        {
+          "path": "registry/new-york/blocks/DataGrid/DataGrid.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/new-york/blocks/DataGrid/Cells/ActionCell.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/new-york/blocks/DataGrid/Cells/ColumnSchemaCell.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/new-york/blocks/DataGrid/Cells/RowSelectionCell.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/new-york/blocks/DataGrid/Headers/ActionHeader.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/new-york/blocks/DataGrid/Headers/ColumnSchemaHeader.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/new-york/blocks/DataGrid/Headers/RowSelectionHeader.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/new-york/blocks/DataGrid/Pagination/NextButton.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/new-york/blocks/DataGrid/Pagination/PageSizeDropdown.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/new-york/blocks/DataGrid/Pagination/PreviousButton.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/new-york/blocks/DataGrid/Toolbar/Toolbar.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "datagrid-bookmark-manager",
+      "type": "registry:component",
+      "title": "DataGrid Bookmark Manager",
+      "description": "Bookmark Manager for your DataGrid",
+      "registryDependencies": ["button","popover", "input"],
+      "dependencies": ["@strucura/datagrids-headless-react", "lucide-react"],
+      "files": [
+        {
+          "path": "registry/new-york/blocks/BookmarkManager/BookmarkManager.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "datagrid-bulk-action-manager",
+      "type": "registry:component",
+      "title": "DataGrid Bulk Action Manager",
+      "description": "Bulk Action Manager for your DataGrid",
+      "registryDependencies": ["button","dropdown-menu"],
+      "dependencies": ["@strucura/datagrids-headless-react", "lucide-react"],
+      "files": [
+        {
+          "path": "registry/new-york/blocks/BulkActionManager/BulkActionManager.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "datagrid-column-manager",
+      "type": "registry:component",
+      "title": "DataGrid Column Manager",
+      "description": "Column Manager for your DataGrid",
+      "registryDependencies": ["button","dropdown-menu", "http://192.168.86.186:3000/r/datagrid-sortable-item.json"],
+      "dependencies": ["@strucura/datagrids-headless-react", "lucide-react", "@dnd-kit/sortable", "@dnd-kit/core", "@dnd-kit/utilities"],
+      "files": [
+        {
+          "path": "registry/new-york/blocks/ColumnManager/ColumnManager.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "datagrid-advanced-filter-manager",
+      "type": "registry:component",
+      "title": "DataGrid Advanced Filter Manager",
+      "description": "Advanced Filter Manager for your DataGrid",
+      "registryDependencies": ["button","popover", "calendar", "select", "card", "input"],
+      "dependencies": ["@strucura/datagrids-headless-react", "lucide-react"],
+      "files": [
+        {
+          "path": "registry/new-york/blocks/AdvancedFilterManager/AdvancedFilterManager.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/new-york/blocks/AdvancedFilterManager/components/DateFilterValue.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/new-york/blocks/AdvancedFilterManager/components/FilterBuilder.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/new-york/blocks/AdvancedFilterManager/components/FilterOperatorSelector.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/new-york/blocks/AdvancedFilterManager/components/FilterSetBuilder.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/new-york/blocks/AdvancedFilterManager/components/NumericFilterValue.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/new-york/blocks/AdvancedFilterManager/components/TextFilterValue.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "datagrid-sort-manager",
+      "type": "registry:component",
+      "title": "DataGrid Sort Manager",
+      "description": "Sort Manager for your DataGrid",
+      "registryDependencies": ["button","popover", "select", "http://192.168.86.186:3000/r/datagrid-sortable-item.json"],
+      "dependencies": ["@strucura/datagrids-headless-react", "lucide-react", "@dnd-kit/sortable", "@dnd-kit/core", "@dnd-kit/utilities"],
+      "files": [
+        {
+          "path": "registry/new-york/blocks/SortManager/SortManager.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "datagrid-sortable-item",
+      "type": "registry:ui",
+      "title": "DataGrid Sortable Item",
+      "description": "Add support for drag and drop to your DataGrid",
+      "registryDependencies": ["button","popover", "select"],
+      "dependencies": ["lucide-react", "@dnd-kit/sortable", "@dnd-kit/utilities"],
+      "files": [
+        {
+          "path": "registry/new-york/ui/sortable-item.tsx",
+          "type": "registry:component"
+        }
+      ]
+    }
+  ]
+}

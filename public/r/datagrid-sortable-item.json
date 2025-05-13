@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "datagrid-sortable-item",
+  "type": "registry:ui",
+  "title": "DataGrid Sortable Item",
+  "description": "Add support for drag and drop to your DataGrid",
+  "dependencies": [
+    "lucide-react",
+    "@dnd-kit/sortable",
+    "@dnd-kit/utilities",
+    "lucide-react",
+    "@dnd-kit/utilities",
+    "@dnd-kit/sortable"
+  ],
+  "registryDependencies": [
+    "button",
+    "popover",
+    "select"
+  ],
+  "files": [
+    {
+      "path": "registry/new-york/ui/sortable-item.tsx",
+      "content": "import { JSX } from 'react';\nimport { GripVertical } from 'lucide-react';\nimport { CSS } from '@dnd-kit/utilities';\nimport {useSortable} from '@dnd-kit/sortable';\n\nconst SortableItem = ({ id, children }: { id: string; children: JSX.Element }) => {\n    const { attributes, listeners, setNodeRef, transform, transition } = useSortable({ id });\n    const style = {\n        transform: CSS.Transform.toString(transform),\n        transition,\n    };\n\n    return (\n        <div ref={setNodeRef} style={style} {...attributes} className=\"flex items-center justify-between cursor-grab\">\n            <div className=\"flex-grow\">\n                {children}\n            </div>\n            <div {...listeners} className=\"cursor-grab inline-block\">\n                <GripVertical className=\"w-4 h-4 mr-2\" />\n            </div>\n        </div>\n    );\n};\n\nexport { SortableItem };\n",
+      "type": "registry:component"
+    }
+  ]
+}
