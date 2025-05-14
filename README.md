@@ -14,6 +14,7 @@ npx shadcn add https://raw.githubusercontent.com/strucura/datagrids-shadcn-regis
 npx shadcn add https://raw.githubusercontent.com/strucura/datagrids-shadcn-registry/refs/heads/master/public/r/datagrid-sortable-item.json
 ```
 
+### Usage
 ```typescript
 import { PlaceholderPattern } from '@/components/ui/placeholder-pattern';
 import AppLayout from '@/layouts/app-layout';
