@@ -1,6 +1,6 @@
 "use client"
 import React, { JSX, useEffect, useState } from 'react';
-import FilterSetBuilder from './components/FilterSetBuilder';
+import FilterSetBuilder from '@/registry/new-york/blocks/AdvancedFilterManager/components/FilterSetBuilder';
 import { Button } from '@/registry/new-york/ui/button';
 import { Popover, PopoverContent, PopoverTrigger } from '@/registry/new-york/ui/popover';
 import { Check, Filter, Plus } from 'lucide-react';
