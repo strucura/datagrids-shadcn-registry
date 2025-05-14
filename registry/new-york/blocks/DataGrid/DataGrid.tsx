@@ -90,7 +90,7 @@ function DataGridContent<T>({ schema, toolbarLeft, toolbarRight }: DataGridProps
     );
 }
 
-export function DataGrid<T>(props: DataGridProps) {
+export default function DataGrid<T>(props: DataGridProps) {
     return (
         <DataGridProvider schema={props.schema}>
             <DataGridContent<T> {...props} />

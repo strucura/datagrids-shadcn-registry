@@ -1,6 +1,6 @@
 "use client"
 import React, { JSX, useEffect, useState } from 'react';
-import FilterSetBuilder from './FilterSetBuilder';
+import FilterSetBuilder from './components/FilterSetBuilder';
 import { Button } from '@/registry/new-york/ui/button';
 import { Popover, PopoverContent, PopoverTrigger } from '@/registry/new-york/ui/popover';
 import { Check, Filter, Plus } from 'lucide-react';
@@ -11,7 +11,7 @@ import { useDataGridContext, FilterSetOperator, FilterSetSchema, FilterOperator 
  *
  * @returns {JSX.Element} The AdvancedFilterManager component.
  */
-const FilterManager = <T,>(): JSX.Element => {
+const AdvancedFilterManager = <T,>(): JSX.Element => {
 
     const { columns, filterSets, setFilterSets } = useDataGridContext<T>();
 
@@ -108,4 +108,4 @@ const FilterManager = <T,>(): JSX.Element => {
     );
 };
 
-export default FilterManager;
+export default AdvancedFilterManager;
