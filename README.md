@@ -1,23 +1,15 @@
-# registry-template
+# DataGrid ShadCn Registery
 
-You can use the `shadcn` CLI to run your own component registry. Running your own
-component registry allows you to distribute your custom components, hooks, pages, and
-other files to any React project.
+This is a proof of concept and not ready for production usage.
 
-> [!IMPORTANT]  
-> This template uses Tailwind v4. For Tailwind v3, see [registry-template](https://github.com/shadcn-ui/registry-template).
+### Installation
 
-## Getting Started
-
-This is a template for creating a custom registry using Next.js.
-
-- The template uses a `registry.json` file to define components and their files.
-- The `shadcn build` command is used to build the registry.
-- The registry items are served as static files under `public/r/[name].json`.
-- The template also includes a route handler for serving registry items.
-- Every registry item are compatible with the `shadcn` CLI.
-- We have also added v0 integration using the `Open in v0` api.
-
-## Documentation
-
-Visit the [shadcn documentation](https://ui.shadcn.com/docs/registry) to view the full documentation.
+```bash
+npx shadcn add https://github.com/strucura/datagrids-shadcn-registry/blob/master/public/r/datagrid.json
+npx shadcn add https://github.com/strucura/datagrids-shadcn-registry/blob/master/public/r/datagrid-advanced-filter-manager.json
+npx shadcn add https://github.com/strucura/datagrids-shadcn-registry/blob/master/public/r/datagrid-bookmark-manager.json
+npx shadcn add https://github.com/strucura/datagrids-shadcn-registry/blob/master/public/r/datagrid-bulk-action-manager.json
+npx shadcn add https://github.com/strucura/datagrids-shadcn-registry/blob/master/public/r/datagrid-column-manager.json
+npx shadcn add https://github.com/strucura/datagrids-shadcn-registry/blob/master/public/r/datagrid-sort-manager.json
+npx shadcn add https://github.com/strucura/datagrids-shadcn-registry/blob/master/public/r/datagrid-sortable-item.json
+```
