@@ -90,7 +90,7 @@
       "type": "registry:component",
       "title": "DataGrid Column Manager",
       "description": "Column Manager for your DataGrid",
-      "registryDependencies": ["button","dropdown-menu", "http://192.168.86.186:3000/r/datagrid-sortable-item.json"],
+      "registryDependencies": ["button","dropdown-menu", "https://raw.githubusercontent.com/strucura/datagrids-shadcn-registry/refs/heads/master/public/r/datagrid-sortable-item.json"],
       "dependencies": ["@strucura/datagrids-headless-react", "lucide-react", "@dnd-kit/sortable", "@dnd-kit/core", "@dnd-kit/utilities"],
       "files": [
         {
@@ -142,7 +142,7 @@
       "type": "registry:component",
       "title": "DataGrid Sort Manager",
       "description": "Sort Manager for your DataGrid",
-      "registryDependencies": ["button","popover", "select", "http://192.168.86.186:3000/r/datagrid-sortable-item.json"],
+      "registryDependencies": ["button","popover", "select", "https://raw.githubusercontent.com/strucura/datagrids-shadcn-registry/refs/heads/master/public/r/datagrid-sortable-item.json"],
       "dependencies": ["@strucura/datagrids-headless-react", "lucide-react", "@dnd-kit/sortable", "@dnd-kit/core", "@dnd-kit/utilities"],
       "files": [
         {
